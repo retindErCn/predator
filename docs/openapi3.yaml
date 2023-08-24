@@ -2719,8 +2719,17 @@ components:
             - database
           properties:
             host:
-              type: string
+              type: object 
               description: Influx host.
+              - propertyA
+              - propertyB
+              properties:
+                propertyA:
+                  type: string
+                  description: User name to propertyA.
+                propertyB:
+                  type: string
+                  description: User name to propertyB.
             username:
               type: string
               description: User name to influx.
