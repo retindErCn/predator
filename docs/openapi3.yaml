@@ -2721,8 +2721,9 @@ components:
             host:
               type: object 
               description: Influx host.
-              - propertyA
-              - propertyB
+              required:
+                - propertyA
+                - propertyB
               properties:
                 propertyA:
                   type: string
