@@ -2356,7 +2356,6 @@ components:
           example: 4bf5d7ab-f310-4a64-8ec2-d65c06188ec1
         cron_expression:
           type: string
-          enum:[yansl,who]
           description: >-
             A cron expression for scheduling the test to run periodically at a
             specified date/time.
