@@ -52,8 +52,6 @@ tags:
   - name: Configuration
     description: |
       This resource allows you to configure Predator programmatically.
-    - subfolder1
-      - subfolder2
   - name: Files
     description: >
       This resource allows uploading files which can be used by Predator tests
@@ -82,7 +80,7 @@ paths:
   /v1/dsl/{dsl_name}/definitions:
     parameters:
       - $ref: '#/components/parameters/dsl_name'
-      - $ref: '#/components/parameters/context_id'
+      # - $ref: '#/components/parameters/context_id'
     post:
       operationId: create-a-dsl-definition
       tags:
